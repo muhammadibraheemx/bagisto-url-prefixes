@@ -42,17 +42,17 @@ This is a Bagisto extension, not a standalone Laravel storefront. Bagisto 2.4 an
 
 ## Installation
 
-The Composer package name is `verasole/bagisto-url-prefixes`. The package is not yet listed on Packagist; install it directly from GitHub using a Composer VCS repository.
+The Composer package name is `muhammadibraheemx/bagisto-url-prefixes`. The package is not yet listed on Packagist; install it directly from GitHub using a Composer VCS repository.
 
 Register the repository in your Bagisto application:
 
 ```bash
 composer config repositories.bagisto-url-prefixes vcs https://github.com/muhammadibraheemx/bagisto-url-prefixes
-composer require verasole/bagisto-url-prefixes:dev-main
+composer require muhammadibraheemx/bagisto-url-prefixes:dev-main
 php artisan optimize:clear
 ```
 
-After a stable release has been tagged and indexed on Packagist, installation can use just `composer require verasole/bagisto-url-prefixes` followed by `php artisan optimize:clear`.
+After a stable release has been tagged and indexed on Packagist, installation can use just `composer require muhammadibraheemx/bagisto-url-prefixes` followed by `php artisan optimize:clear`.
 
 Laravel discovers the service provider from the package's Composer metadata. No application PSR-4 mapping, `bootstrap/providers.php` entry, `config/concord.php` entry, or `phpunit.xml` edit is required. The extension substitutes Bagisto's existing Category contract through Concord after the core modules boot; it introduces no new entity or Concord module.
 
@@ -216,7 +216,7 @@ The package introduces no schema migration and does not change stored product UR
 Remove custom calls to `shop.collection.show` and other package-specific references from your application before uninstalling. Replace category links with Bagisto's supported URL generation, and decide how published prefixed URLs should redirect after removal.
 
 ```bash
-composer remove verasole/bagisto-url-prefixes
+composer remove muhammadibraheemx/bagisto-url-prefixes
 php artisan optimize:clear
 ```
 
@@ -228,7 +228,7 @@ Clone this package into `packages/Verasole/Storefront` in a Bagisto application.
 
 ```bash
 composer config repositories.bagisto-url-prefixes path packages/Verasole/Storefront
-composer require verasole/bagisto-url-prefixes:dev-main
+composer require muhammadibraheemx/bagisto-url-prefixes:dev-main
 ```
 
 When migrating an existing manual installation, remove its duplicate `Verasole\Storefront\` application autoload mapping and manual provider entry after Composer manages the package. Keep existing published configuration. The source namespace and config filename deliberately remain compatible with the earlier local Storefront module.
