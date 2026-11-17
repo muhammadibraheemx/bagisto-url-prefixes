@@ -1,0 +1,24 @@
+{
+    "name": "verasole/bagisto-url-prefixes",
+    "description": "Configurable product and category URL prefixes for Bagisto 2.5 storefronts.",
+    "type": "library",
+    "license": "MIT",
+    "keywords": ["bagisto", "laravel", "ecommerce", "url", "routing"],
+    "require": {
+        "php": "^8.4",
+        "illuminate/support": "^13.0",
+        "konekt/concord": "^1.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "Verasole\\Storefront\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Verasole\\Storefront\\Providers\\StorefrontServiceProvider"
+            ]
+        }
+    }
+}
