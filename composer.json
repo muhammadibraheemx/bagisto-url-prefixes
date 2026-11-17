@@ -3,6 +3,11 @@
     "description": "Configurable product and category URL prefixes for Bagisto 2.5 storefronts.",
     "type": "library",
     "license": "MIT",
+    "homepage": "https://github.com/muhammadibraheemx/bagisto-url-prefixes",
+    "support": {
+        "issues": "https://github.com/muhammadibraheemx/bagisto-url-prefixes/issues",
+        "source": "https://github.com/muhammadibraheemx/bagisto-url-prefixes"
+    },
     "keywords": ["bagisto", "laravel", "ecommerce", "url", "routing"],
     "require": {
         "php": "^8.4",

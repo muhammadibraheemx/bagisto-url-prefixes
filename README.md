@@ -42,12 +42,12 @@ This is a Bagisto extension, not a standalone Laravel storefront. Bagisto 2.4 an
 
 ## Installation
 
-The intended Composer package name is `verasole/bagisto-url-prefixes`. Until the repository is published and submitted to Packagist, the public installation command below is not available.
+The Composer package name is `verasole/bagisto-url-prefixes`. The package is not yet listed on Packagist; install it directly from GitHub using a Composer VCS repository.
 
-After publication on GitHub, register the repository in your Bagisto application:
+Register the repository in your Bagisto application:
 
 ```bash
-composer config repositories.bagisto-url-prefixes vcs https://github.com/verasole/bagisto-url-prefixes
+composer config repositories.bagisto-url-prefixes vcs https://github.com/muhammadibraheemx/bagisto-url-prefixes
 composer require verasole/bagisto-url-prefixes:dev-main
 php artisan optimize:clear
 ```
@@ -279,7 +279,7 @@ Runtime dependencies are declared in the package manifest. Bagisto itself suppli
 
 ## Contributing
 
-Issues and pull requests are welcome once the repository is published. Include the Bagisto, PHP, and Laravel versions, active theme, configured prefixes, and a minimal reproduction. Run the package tests and Laravel Pint before proposing changes. Keep database access compatible with Bagisto's supported database engines and preserve channel visibility checks.
+Report bugs through [GitHub issues](https://github.com/muhammadibraheemx/bagisto-url-prefixes/issues); pull requests are welcome. Include the Bagisto, PHP, and Laravel versions, active theme, configured prefixes, and a minimal reproduction. Run the package tests and Laravel Pint before proposing changes. Keep database access compatible with Bagisto's supported database engines and preserve channel visibility checks.
 
 ## License
 
